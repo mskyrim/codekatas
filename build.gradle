@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id "info.solidsoft.pitest" version "1.4.0"
+}
+
+group 'com'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation     group: 'com.h2database', name: 'h2', version: '1.4.200'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.13.2'
+    testImplementation group: 'io.cucumber', name: 'cucumber-core', version: '6.6.0'
+    testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '6.6.0'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.6.0'
+}
+
+pitest {
+    targetClasses = ['fizzbuzz.FizzBuzz', 'rpncalculator.RPNCalculator']  //by default "${project.group}.*"
+    targetTests = ['fizzbuzz.FizzBuzzShould', 'rpncalculator.RPNCalculatorShould']
+    pitestVersion = '1.4.0' //not needed when a default PIT version should be used
+    threads = 4
+    outputFormats = ['XML', 'HTML']
+    timestampedReports = false
+}

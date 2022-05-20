@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RPN Calculator" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-04T16:44:43" hostname="localhost.localdomain" time="0.024">
+  <properties/>
+  <testcase name="addition operation #1" classname="RPN Calculator" time="0.015"/>
+  <testcase name="addition operation #2" classname="RPN Calculator" time="0.008"/>
+  <system-out><![CDATA[
+@calculator
+Scenario Outline: addition operation        ?[90m# features/rpnCalculator.feature:12?[0m
+  ?[32mGiven ?[0m?[32mi have an rpn calculator?[0m            ?[90m# rpncalculator.stepdefs.RPNCalculatorStepDefs.iHaveAnRpnCalculator()?[0m
+  ?[32mWhen ?[0m?[32mi do addition operation with ?[0m?[32m?[1m"3 1 +"?[0m ?[90m# rpncalculator.stepdefs.RPNCalculatorStepDefs.iDoAdditionOperationWithInput(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m4?[0m                      ?[90m# rpncalculator.stepdefs.RPNCalculatorStepDefs.the_result_is(int)?[0m
+
+@calculator
+Scenario Outline: addition operation        ?[90m# features/rpnCalculator.feature:13?[0m
+  ?[32mGiven ?[0m?[32mi have an rpn calculator?[0m            ?[90m# rpncalculator.stepdefs.RPNCalculatorStepDefs.iHaveAnRpnCalculator()?[0m
+  ?[32mWhen ?[0m?[32mi do addition operation with ?[0m?[32m?[1m"3 3 +"?[0m ?[90m# rpncalculator.stepdefs.RPNCalculatorStepDefs.iDoAdditionOperationWithInput(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m6?[0m                      ?[90m# rpncalculator.stepdefs.RPNCalculatorStepDefs.the_result_is(int)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rpncalculator.RPNCalculatorShould" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-03-04T16:44:43" hostname="localhost.localdomain" time="0.029">
+  <properties/>
+  <testcase name="return_8_when_input_is_5_8_1_4_2_MAX" classname="rpncalculator.RPNCalculatorShould" time="0.012"/>
+  <testcase name="return_2_when_input_is_2" classname="rpncalculator.RPNCalculatorShould" time="0.0"/>
+  <testcase name="return_3_when_input_is_5_2_sub" classname="rpncalculator.RPNCalculatorShould" time="0.0"/>
+  <testcase name="return_3_when_input_is_9_SQRT" classname="rpncalculator.RPNCalculatorShould" time="0.0"/>
+  <testcase name="return_141_when_input_is_3_5_8_mult_7_add_mult" classname="rpncalculator.RPNCalculatorShould" time="0.005"/>
+  <testcase name="return_4_when_input_is_2_2_multi" classname="rpncalculator.RPNCalculatorShould" time="0.0"/>
+  <testcase name="return_3_when_input_is_1_2_add" classname="rpncalculator.RPNCalculatorShould" time="0.001"/>
+  <testcase name="return_3_when_input_is_4_2_add_3_sub" classname="rpncalculator.RPNCalculatorShould" time="0.003"/>
+  <testcase name="return_1_when_input_is_1" classname="rpncalculator.RPNCalculatorShould" time="0.001"/>
+  <testcase name="return_2_when_input_is_4_2_div" classname="rpncalculator.RPNCalculatorShould" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

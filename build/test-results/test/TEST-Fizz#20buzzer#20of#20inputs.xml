@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Fizz buzzer of inputs" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-03-04T16:44:43" hostname="localhost.localdomain" time="0.366">
+  <properties/>
+  <testcase name="should return input when input is not divisible by 3 or/and 5 #1" classname="Fizz buzzer of inputs" time="0.254"/>
+  <testcase name="should return input when input is not divisible by 3 or/and 5 #2" classname="Fizz buzzer of inputs" time="0.016"/>
+  <testcase name="should return input when input is not divisible by 3 or/and 5 #3" classname="Fizz buzzer of inputs" time="0.019"/>
+  <testcase name="should return &quot;fizz&quot; when input is divisible by 3 and not by 5 #1" classname="Fizz buzzer of inputs" time="0.013"/>
+  <testcase name="should return &quot;fizz&quot; when input is divisible by 3 and not by 5 #2" classname="Fizz buzzer of inputs" time="0.011"/>
+  <testcase name="should return &quot;fizz&quot; when input is divisible by 3 and not by 5 #3" classname="Fizz buzzer of inputs" time="0.016"/>
+  <testcase name="should return &quot;buzz&quot; when input is divisible by 5 and not by 3 #1" classname="Fizz buzzer of inputs" time="0.007"/>
+  <testcase name="should return &quot;buzz&quot; when input is divisible by 5 and not by 3 #2" classname="Fizz buzzer of inputs" time="0.007"/>
+  <testcase name="should return &quot;buzz&quot; when input is divisible by 5 and not by 3 #3" classname="Fizz buzzer of inputs" time="0.006"/>
+  <testcase name="should return &quot;fizzbuzz&quot; when input is divisible by 5 and by 3 #1" classname="Fizz buzzer of inputs" time="0.008"/>
+  <testcase name="should return &quot;fizzbuzz&quot; when input is divisible by 5 and by 3 #2" classname="Fizz buzzer of inputs" time="0.006"/>
+  <system-out><![CDATA[
+Scenario Outline: should return input when input is not divisible by 3 or/and 5 ?[90m# features/fizzBuzzer.feature:9?[0m
+-------------- 1 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m1?[0m                                                          ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                       ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"1"?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return input when input is not divisible by 3 or/and 5 ?[90m# features/fizzBuzzer.feature:10?[0m
+-------------- 2 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m2?[0m                                                          ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                       ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"2"?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return input when input is not divisible by 3 or/and 5 ?[90m# features/fizzBuzzer.feature:11?[0m
+-------------- 4 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m4?[0m                                                          ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                       ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"4"?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return "fizz" when input is divisible by 3 and not by 5 ?[90m# features/fizzBuzzer.feature:19?[0m
+-------------- 3 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m3?[0m                                                           ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"fizz"?[0m                                                      ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return "fizz" when input is divisible by 3 and not by 5 ?[90m# features/fizzBuzzer.feature:20?[0m
+-------------- 6 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m6?[0m                                                           ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"fizz"?[0m                                                      ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return "fizz" when input is divisible by 3 and not by 5 ?[90m# features/fizzBuzzer.feature:21?[0m
+-------------- 9 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m9?[0m                                                           ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"fizz"?[0m                                                      ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return "buzz" when input is divisible by 5 and not by 3 ?[90m# features/fizzBuzzer.feature:29?[0m
+-------------- 5 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m5?[0m                                                           ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"buzz"?[0m                                                      ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return "buzz" when input is divisible by 5 and not by 3 ?[90m# features/fizzBuzzer.feature:30?[0m
+-------------- 10 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m10?[0m                                                          ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"buzz"?[0m                                                      ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return "buzz" when input is divisible by 5 and not by 3 ?[90m# features/fizzBuzzer.feature:31?[0m
+-------------- 25 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m25?[0m                                                          ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"buzz"?[0m                                                      ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return "fizzbuzz" when input is divisible by 5 and by 3 ?[90m# features/fizzBuzzer.feature:39?[0m
+-------------- 15 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m15?[0m                                                          ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"fizzbuzz"?[0m                                                  ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+
+Scenario Outline: should return "fizzbuzz" when input is divisible by 5 and by 3 ?[90m# features/fizzBuzzer.feature:40?[0m
+-------------- 30 ---------
+  ?[32mGiven ?[0m?[32mthe input is ?[0m?[32m?[1m30?[0m                                                          ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theInputIsInput(int)?[0m
+  ?[32mWhen ?[0m?[32mfizzBuzz the input?[0m                                                        ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.fizzbuzzTheInput()?[0m
+  ?[32mThen ?[0m?[32mthe result is ?[0m?[32m?[1m"fizzbuzz"?[0m                                                  ?[90m# fizzbuzz.stepdef.FizzBuzzStepdefs.theResultIsResult(java.lang.String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
